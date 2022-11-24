@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Lab 15
+      // ให้ใช้ destructuring โดยให้ x เท่ากับ 5 และ y เท่ากับ 100
+      const q = { prop: 5, prop2: [10, 100] };
+
+      const {
+        prop: x,
+        prop2: [, y],
+      } = q;
+    </script>
+  </body>
+</html>

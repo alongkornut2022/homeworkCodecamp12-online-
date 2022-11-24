@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Lab 6
+      // จงเขียนฟังก์ชัน extractCurrencyValue(string, rate) ในการแปลงค่า string ที่อยู่ในรูปแบบสกุลเงินดอลลาร์ ให้อยู่ในรูปแบบสกุลเงินบาท
+      // rate คือ อัตราในการแปลงดอลลาร์ให้เป็นบาท
+      // ตัวอย่าง ผลลัพธ์ของฟังก์ชัน
+      // extractCurrencyValue('$120', 30); // THB3600
+
+      function extractCurrencyValue(string, rate) {
+        if (string[0] === '$') {
+          console.log('THB' + string.slice(1) * rate);
+        } else {
+          console.log('Enter Dolar : $');
+        }
+      }
+    </script>
+  </body>
+</html>

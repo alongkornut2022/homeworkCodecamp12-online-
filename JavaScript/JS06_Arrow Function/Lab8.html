@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Lab 8 หน้า 61
+      // ให้เขียนฟังก์ชันคำนวณแต้มฟุตบอล โดยชนะได้ 3 คะแนน เสมอได้ 1 คะแนน และแพ้ไม่ได้คะแนน
+      let score = (w, d, l) => {
+        console.log(`ชนะ : ${w} , เสมอ : ${d} , แพ้ : ${l}`);
+        if (w) w = w * 3;
+        if (d) d = d * 1;
+        if (l) l = l * 0;
+        console.log('คะแนนรวม : ', (score = w + d + l));
+      };
+    </script>
+  </body>
+</html>

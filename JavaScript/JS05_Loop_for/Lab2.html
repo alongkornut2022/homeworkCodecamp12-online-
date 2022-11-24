@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //Lab 2  หน้า 26
+      // ให้เขียนโค้ดเพื่อหาผลรวมของจำนวนเต็มตั้งแต่ 1 ถึง 100 ตามเงื่อนไขดังนี้
+      //     - หาผลรวมตัวเลขทุกตัว
+      //     - หาผลรวมเฉพาะเลขคู่ และผลรวมเฉพาะเลขคี่
+      //     - หาผลรวมของเลขที่หาร 2 ลงตัว ยกกำลังสอง (2^2 + 4^2 + ...) ลบด้วยผลรวมของเลขที่หาร 3 ลงตัว ยกกำลัง 2 (3^2 + 6^2 + ...)
+
+      // หาผลรวมตัวเลขทุกตัว
+      // let result = 0;
+      // for (i = 1; i < 101; i++ ) {
+      //     result += i;
+      //     console.log(i, result);
+      // }
+
+      // หาผลรวมเฉพาะเลขคู่
+      // let result = 0;
+      // for (i = 1; i < 101; i++) {
+      //     if (i % 2 != 0) {
+      //         continue;
+      //     }
+      //     result += i;
+      //     console.log(i, result);
+      // }
+
+      // และผลรวมเฉพาะเลขคี่
+      // let result = 0;
+      // for (i = 1; i <101; i++) {
+      //     if (i % 2 == 0) {
+      //         continue;
+      //     }
+      //     result += i;
+      //     console.log(i, result);
+      // }
+
+      // หาผลรวมของเลขที่หาร 2 ลงตัว ยกกำลังสอง (2^2 + 4^2 + ...) ลบด้วยผลรวมของเลขที่หาร 3 ลงตัว ยกกำลัง 2 (3^2 + 6^2 + ...)
+
+      // let result2 = 0;
+      // for (i = 1; i < 101; i++) {
+      //     if (i % 2 != 0) {
+      //         continue;
+      //     }
+      //     result2 += (i**2);
+      //     console.log(i, result2);
+      // }
+      // let result3 = 0;
+      // for (i = 1; i < 101; i++) {
+      //     if (i % 3 != 0) {
+      //         continue;
+      //     }
+      //     result3 += (i ** 2);
+      //     console.log(i, result3);
+      // }
+      // console.log(`${result2} - ${result3} = `, (result2 - result3));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Lab 6  หน้า 30
+      // ให้คำนวณเงินฝากสะสมโดยปีที่ 1 มีเงินเริ่มต้น 100,000 ธนาคารให้ดอกเบี้ยร้อยละ 2.5 ต่อปี
+      // โดยจ่ายดอกเบี้ยปีละครั้ง ดอกเบี้ยที่ได้จะสะสมและทบยอดไปในเงินฝากปีถัดไป
+      // เมื่อครบ 10 ปี จะมียอดเงินฝากสะสมเท่าใด (ไม่มีการฝากเพิ่มและถอนออก)
+
+      let x = 100000 + 100000 * 0.025;
+      console.log(` ยอดเงินปีที่ 1 = ${x} บาท`);
+      for (i = 2; i < 11; i++) {
+        x = x + x * 0.025;
+        console.log(` ยอดเงินปีที่ ${i} = ${x} บาท`);
+      }
+    </script>
+  </body>
+</html>

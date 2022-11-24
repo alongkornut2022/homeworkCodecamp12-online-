@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Lab 7
+      // จงเขียนฟังก์ชัน updateTask(id, newName) เพื่อแก้ไขค่า element ใน tasks ที่มี property ชื่อ id เท่ากับ id โดยแก้ไข name ให้มีค่าเป็น newName
+      // execute updateTask(2, 'Travelling')
+      const tasks = [
+        { id: 1, name: 'Fishing' },
+        { id: 2, name: 'Shopping' },
+        { id: 3, name: 'Swimming' },
+      ];
+
+      function updateTask(id, newName) {
+        let proId = tasks.findIndex((item) => item.id === id);
+        tasks[proId].name = newName;
+      }
+    </script>
+  </body>
+</html>

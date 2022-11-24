@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Lab 2
+      // จงเขียนฟังก์ชันในการแปลงคำที่อยู่ในรูปแบบ dash-separated เช่น background-color ให้อยู่ในรูปแบบ camelCase เช่น backgroundColor
+
+      // function tranWord(word) {
+      //   let array = word.split('-');
+      //   // console.log(array);
+      //   array[1] = array[1].toUpperCase();
+      //   console.log(array);
+      //   let newArray = array.join('');
+      //   console.log(newArray);
+      // }
+
+      function tranWord(word) {
+        array = word.split('');
+        console.log(array);
+        let searchDash = array.indexOf('-');
+        array[searchDash + 1] = array[searchDash + 1].toUpperCase();
+        console.log(array);
+        array.splice(searchDash, 1);
+        console.log(array);
+        let newWord = array.join('');
+        console.log(word + ' =  ' + newWord);
+      }
+    </script>
+  </body>
+</html>
+
+toUpperCase();

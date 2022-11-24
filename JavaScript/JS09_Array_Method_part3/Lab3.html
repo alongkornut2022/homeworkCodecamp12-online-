@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Lab 3
+      // ผลจากการรันคำสั่งในบรรทัด \* คืออะไร
+      console.log([1, 2, 3].includes(2)); // \*  true
+      console.log([1, 2, 3].includes(4)); // **  false
+      console.log([1, 2, 3].includes(3, 3)); // \***   false
+      console.log([1, 2, 3].includes(3, -1)); // \***\*   true
+      console.log([1, 2, NaN].includes(NaN)); // \*\*\***  true
+      console.log(['1', '2', '3'].includes(3)); // **\*\***  false
+    </script>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Lab 3 หน้า 26
+      // บรรทัด *, **, *** และ **** ให้ผลลัพธ์เป็นอะไร เพราะอะไร
+
+      let message = 'Welcome to Thailand';
+
+      function logMessage(message) {
+        message = 'Hello everybody';
+        console.log(message); // * Hello everybody' , message เป็น  Local variable
+      }
+
+      logMessage(message);
+      console.log(message); // ** 'Welcome to Thailand' , messsge เป็น Global variable
+
+      let name = 'John';
+
+      function sayHi(input) {
+        console.log(name); // ***  John , name เป็น Outer variable
+        name = input;
+      }
+
+      sayHi();
+      console.log(name); // ****  John , name เป็น Global variable
+    </script>
+  </body>
+</html>

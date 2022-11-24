@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Lab 10
+      // จงเขียนฟังก์ชัน topSalaries(salaries) เพื่อ return ชื่อคนที่มี salary สูงสุด
+      // ถ้า salaries เป็น empty object ให้ return null
+      // ถ้ามีคนที่ได้ salary มากสุดให้ return ชื่อคนใดคนหนึ่ง
+      let salaries = {
+        John: 100,
+        Pete: 300,
+        Mary: 250,
+      };
+
+      function topSalaries(salaries) {
+        if (Object.keys(salaries).length === 0) {
+          return null;
+        } else {
+          let maxSalaries = 0;
+          let keySalaries;
+          for (let [key, value] of Object.entries(salaries)) {
+            if (maxSalaries < value) {
+              maxSalaries = value;
+              keySalaries = key;
+            }
+          }
+          return keySalaries;
+        }
+      }
+    </script>
+  </body>
+</html>

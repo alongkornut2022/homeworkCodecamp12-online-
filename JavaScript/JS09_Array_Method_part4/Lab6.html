@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Lab 6
+      // จงเขียนฟังก์ชัน copySorted(arr) เพื่อ return array ที่เรียงข้อมูลใน arr จากน้อยไปหามาก โดยที่ arr ต้องมีค่าเหมือนเดิม
+      // ตัวอย่างผลลัพธ์
+
+      // let arr = ['React', 'Vue', 'Angular'];
+      // let sorted = copySorted(arr);
+
+      // console.log(sorted); // Angular, React, Vue
+      // console.log(arr); // React, Vue, Angular (no changes)
+
+      let arr = ['React', 'Vue', 'Angular'];
+
+      function copySorted(arr) {
+        const newArr = arr.map((item) => item);
+        // console.log(newArr);
+        function compareNumeric(a, b) {
+          if (a > b) return 1;
+          if (a === b) return 0;
+          if (a < b) return -1;
+        }
+        newArr.sort(compareNumeric);
+        console.log(newArr);
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Lab 2 หน้า 17
+      // ให้เขียนเกมส์ทายตัวเลขสำหรับผู้เล่นสองคน โดยมีเงื่อนไขดังนี้
+      // ให้ใช้คำสั่ง prompt  เพื่อให้ผู้เล่นคนแรกพิมพ์เลข ที่อยู่ระหว่าง 1 ถึง 99 โดยไม่ให้ผู้เล่นคนที่สองรู้ว่าตัวเลขเป็นอะไร
+      // ให้ใช้คำสั่ง prompt เพื่อให้ผู้เล่นคนที่สองทายเลข จนกว่าจะถูก ถ้าไม่ถูก จะต้องบอกด้วยว่าเลขที่ผู้เล่นคนที่สองพิมพ์เข้ามา มากกว่า หรือ น้อยกว่าคำตอบนั้น หากพิมพ์ถูกให้แสดงคำว่าถูกต้อง และให้แสดงจำนวนครั้งที่ทาย
+
+      แบบที่ 1
+          let num_1 = +prompt("Gamer_1 Enter Number 1 ถึง 99");
+          let num_2;
+          do {
+              num_2 = +prompt("Gamer_2 Enter Number 1 ถึง 99 ทายตัวเลข Game_1 ให้ถูกต้อง");
+              if (num_1 < num_2) {
+                  alert("ไม่ถูกต้อง ตัวเลข Game_2 มากกว่า คำตอบ");
+              }   else if (num_1 > num_2) {
+                  alert("ไม่ถูกต้อง ตัวเลข Game_2 น้อยกว่า คำตอบ");
+              }   else if (num_1 = num_2) {
+                  alert("ถูกต้อง คำตอบ คือ " + num_1);
+              }
+          }   while (num_1 != num_2);
+
+      // แบบที่ 2
+      //     let num_1 = +prompt("Gamer_1 Enter Number 1 ถึง 99");
+      //     let num_2;
+      //     do {
+      //         num_2 = +prompt("Gamer_2 Enter Number 1 ถึง 99 ทายตัวเลข Game_1 ให้ถูกต้อง");
+      //         if (num_1 < num_2) {
+      //             alert("ไม่ถูกต้อง ตัวเลข Game_2 มากกว่า คำตอบ");
+      //         }   else if (num_1 > num_2) {
+      //             alert("ไม่ถูกต้อง ตัวเลข Game_2 น้อยกว่า คำตอบ");
+      //         }
+      //     }   while (num_1 != num_2);
+      //     alert("ถูกต้อง คำตอบ คือ " + num_1);
+    </script>
+  </body>
+</html>

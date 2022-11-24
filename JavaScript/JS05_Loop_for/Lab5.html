@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Lab 5 หน้า 29
+      // ให้เขียนโค้ดแสดงสูตรคูณตั้งแต่ แม่ 2 ถึง แม่ 12 โดยแสดงผลออกมาใน console
+      //     2 x 1 = 2
+      //     2 x 2 = 4
+      //     ...
+      // คำสั่งขึ้นบรรทัดใหม่ใน console ให้ใช้ \n
+
+      // สูตรคูณแม่ 2
+      // let num_2;
+      // for (i = 1; i < 13; i++) {
+      //     num_2 = 2*i;
+      //     console.log(`2 x ${i} = ${num_2}`);
+      // }
+
+      //   สูตรคูณแม่ 2 ถึง แม่ 12
+      for (i = 2; i < 13; i++) {
+        let num_1 = i;
+        let num_2;
+        console.log('\n');
+        console.log(`สูตรคูณแม่ : ${num_1}`);
+        for (j = 1; j < 13; j++) {
+          num_2 = num_1 * j;
+          console.log(`(${num_1} x ${j}) = ${num_2}`);
+        }
+      }
+    </script>
+  </body>
+</html>

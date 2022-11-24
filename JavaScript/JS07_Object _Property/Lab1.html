@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //Lab 1 หน้า 22
+      // บรรทัดที่มี * ให้ผลลัพธ์เป็นอะไร เพราะอะไร
+
+      const user = {
+        email: 'cc@gmail.com',
+        isActive: true,
+      };
+
+      user.isActive = false;
+      console.log(user); // *    email: 'cc@gmail.com', isActive: false
+      user = {}; //      error
+      console.log(user); // **
+    </script>
+  </body>
+</html>

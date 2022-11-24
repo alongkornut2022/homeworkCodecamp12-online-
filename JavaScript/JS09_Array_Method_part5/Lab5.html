@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Lab 5
+      // จงหาค่ามากสุดและน้อยสุดใน arr
+      let arr = [3.24, 2.78, 3.86, 1.37, 0.52];
+
+      // แบบไม่ใช่ reduce
+      // let sortarr = arr.sort();
+      // let Array1 = sortarr[0];
+      // let Array2 = sortArr[x.lenght - 1];
+
+      // แบบใช้ reduce
+      let max = arr.reduce(function (acc, item) {
+        if (acc > item) return acc;
+        if (acc === item) return 0;
+        if (acc < item) return item;
+      });
+      console.log(max);
+
+      let min = arr.reduce(function (acc, item) {
+        if (acc > item) return item;
+        if (acc === item) return 0;
+        if (acc < item) return acc;
+      });
+      console.log(min);
+    </script>
+  </body>
+</html>

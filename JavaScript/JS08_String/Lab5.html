@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Lab 5
+      // จงเขียนฟังก์ชัน truncate(str, length) เพื่อตัดข้อความ ถ้าหากข้อความมีความยาวมากกว่ากำหนด ให้ตัดความยาวของข้อความให้เท่ากับความยาวที่กำหนดแล้วต่อท้ายด้วย …
+      // ถ้าความยาวข้อความสั้นกว่าความยาวที่กำหนดให้ return เป็นข้อความเดิม
+      // ตัวอย่าง ผลลัพธ์ของฟังก์ชัน
+      // truncate("What I'd like to tell on this topic is:", 20); // What I'd like to te…
+      // truncate("Hi everyone!", 20); // Hi everyone!
+
+      function truncate(str, length) {
+        if (str.length > length) {
+          return str.slice(0, length - 1) + '...';
+        } else {
+          return str;
+        }
+      }
+    </script>
+  </body>
+</html>

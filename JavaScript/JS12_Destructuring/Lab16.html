@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //  Lab 16
+      // ให้ใช้ destructuring โดยให้ x เท่ากับ Hello และ y เท่ากับ b
+      const q = {
+        prop: 'Hello',
+        prop2: {
+          prop2: {
+            nested: ['a', 'b', 'c'],
+          },
+        },
+      };
+      const {
+        prop: x,
+        prop2: {
+          prop2: {
+            nested: [, y],
+          },
+        },
+      } = q;
+    </script>
+  </body>
+</html>

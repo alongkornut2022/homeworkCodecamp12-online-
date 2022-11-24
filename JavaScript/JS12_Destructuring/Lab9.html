@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Lab 9
+      // จงเขียน Object destructuring โดยกำหนดให้
+      // ตัวแปร name เก็บค่า name property
+      // ตัวแปร age เก็บค่า years property
+      // ตัวแปร isAdmin เก็บค่า isAdmin property หากไม่มีค่าให้ default value เป็น true
+      let user = {
+        name: 'John',
+        years: 27,
+      };
+
+      const { name, years: age, isAdmin = true } = user;
+    </script>
+  </body>
+</html>

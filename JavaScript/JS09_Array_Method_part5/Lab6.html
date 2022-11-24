@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Lab 6
+      // จงหาผลรวมของเลขที่มีค่าน้อยกว่า 40 ที่อยู่ในตัวแปร str
+      let str = '31 45 12 67 34 86 23 37 19 41';
+
+      let newStr = str.split(' ');
+      let newStr2 = newStr.filter((item) => +item < 40);
+      let result = newStr2.reduce((acc, item) => (acc = acc + +item), 0);
+      console.log(result);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Lab 14 หน้า 37
+      //     ให้สร้างฟังก์ชัน max ซึ่งจะคืนค่าพารามิเตอร์ที่มีค่ามากที่สุด
+      // พารามิเตอร์มีได้มากสุด 4 ตัว
+      // หากใน argument ของฟังก์ชันมีค่าที่ไม่ใช่ตัวเลข ให้คืนค่าเป็น NaN
+      // เมื่อเรียกใช้งานฟังก์ชันต้องได้ผลลัพธ์ ดังนี้
+
+      // max(); // undefined
+      // max(2); // 2
+      // max(3, 1); // 3
+      // max(7, 3, 9, 2); // 9
+
+      function max(a, b, c, d) {
+        if (a > b && a > c && a > d) {
+          return a;
+        } else if (b > a && a > c && b > d) {
+          return b;
+        } else if (c > a && c > b && c > d) {
+          return c;
+        } else if (d > a && d > b && d > c) {
+          return d;
+        } else if (a > b && a > c) {
+          return a;
+        } else if (b > a && b > c) {
+          return b;
+        } else if (c > a && c > b) {
+          return c;
+        } else if (a > b) {
+          return a;
+        } else if (b > a) {
+          return b;
+        } else if (a) {
+          return a;
+        } else if (
+          (a =
+            'no text' || b == 'no text ' || c == 'no text ' || d == 'no text')
+        ) {
+          return undefined;
+        } else if ((a = '' || b == '' || c == '' || d == '')) {
+          return NaN;
+        }
+      }
+    </script>
+  </body>
+</html>

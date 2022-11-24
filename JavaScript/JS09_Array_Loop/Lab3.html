@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //  Lab 3
+      // ให้เขียนฟังก์ชัน squareArr(arr) เพื่อคืนค่า Array ที่มี element เป็นเลขยกกำลังสองของแต่ละ element ใน arr
+      // ตัวอย่างผลลัพธ์
+      // const arr = [2, 3, 5, 7, 11];
+      // squareArr(arr); // [4, 9, 25, 49, 121]
+
+      function squareArr(arr) {
+        arr.forEach(function (item) {
+          let newitem = item ** 2;
+          arr.push(newitem);
+        });
+        console.log(arr); // [2, 3, 5, 7, 11, 4, 9, 25, 49, 121]
+        arr.forEach(function (item) {
+          arr.shift();
+        });
+        return arr; // [4, 9, 25, 49, 121]
+      }
+
+      // function squareArr(arr) {
+      //     let resultArr = [];
+      //     arr.forEach(item => {
+      //         let squareArr = item**2;
+      //         resultArr.push(squareArr);
+      //     });
+      //     return resultArr;
+      // }
+
+      // function squareArr(arr) {
+      //     let squareArr = [];
+      //     for (let item of arr) {
+      //         squareArr.push(item**2);
+      //     }
+      //     return squareArr;
+      // }
+    </script>
+  </body>
+</html>

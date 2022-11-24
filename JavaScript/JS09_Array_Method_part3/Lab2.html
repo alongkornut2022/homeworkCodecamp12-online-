@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //  Lab 2\*\*
+      // จงหา array ของตำแหน่ง (index) ของ 'a' ใน alphabets
+      // const alphabets = ['a', 'b', 'a', 'c', 'a', 'd'];
+      // expexted result: [0, 2, 4]
+
+      // let result = [];
+      // let i = 0;
+      // let j;
+      // while (i < alphabets.length) {
+      //   if (alphabets.indexOf('a') !== -1) {
+      //     j = alphabets.indexOf('a', i);
+      //     result.push(j);
+      //     i++;
+      //   } else {
+      //     i++;
+      //   }
+      // }
+      // console.log(result);
+
+      const alphabets = ['a', 'b', 'a', 'c', 'a', 'd'];
+      let result = [];
+      alphabets.forEach(function (item, index) {
+        if (item === 'a') {
+          result.push(alphabets.indexOf(item, index));
+        }
+      });
+      console.log(result);
+    </script>
+  </body>
+</html>

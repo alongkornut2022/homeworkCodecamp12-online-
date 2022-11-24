@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Lab 8 หน้า 31
+      // จงเขียนโค้ดเพื่อรับคะแนนมาคำนวณเกรด
+      // ถ้าคะแนน มากกว่าเท่ากับ 80 ได้ A
+      // ถ้าคะแนน อยู่ระหว่าง 70 - 79 ได้ B
+      // ถ้าคะแนน อยู่ระหว่าง 60 - 69 ได้ C
+      // ถ้าคะแนน อยู่ระหว่าง 50 - 59 ได้ D
+      // ถ้าคะแนน น้อยกว่า 50 ได้ F
+
+      let score = prompt('กรุณากรอกคะแนนของคุณ');
+
+      if (score >= 80) {
+        alert('คุณได้เกรด A');
+      } else if (score >= 70 && score <= 79) {
+        alert('คุณได้เกรด B');
+      } else if (score >= 60 && score <= 69) {
+        alert('คุณได้เกรด C');
+      } else if (score >= 50 && score <= 59) {
+        alert('คุณได้เกรด D');
+      } else if (score < 50) {
+        alert('คุณได้เกรด F');
+      }
+    </script>
+  </body>
+</html>

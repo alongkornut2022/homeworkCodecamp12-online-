@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Lab 4
+      // จงสร้างตัวแปร summary โดยใช้ค่าจากตัวแปร sales
+      // netPrice = price x discount (ถ้าไม่มี discount ให้ถือว่า netPrice = price)
+
+      const sales = [
+        { price: 1000, discount: 0.1 },
+        { price: 500, discount: 0.05 },
+        { price: 100 },
+      ];
+
+      // const summary = [
+      // { netPrice: 900 },
+      // { netPrice: 475 },
+      // { netPrice: 100 }
+      // ];
+
+      const summary = [];
+      let netPrice;
+      sales.forEach(function (item, index) {
+        if (sales[index].discount) {
+          netPrice =
+            sales[index].price - sales[index].price * sales[index].discount;
+        } else {
+          netPrice = sales[index].price;
+        }
+        summary.push({ netPrice });
+      });
+      console.log(summary);
+    </script>
+  </body>
+</html>

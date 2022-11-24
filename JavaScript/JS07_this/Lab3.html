@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // ให้สร้าง Object calculator ซึ่งมี 3 method
+      // read() ให้รับค่า input 2 ค่า
+      // sum() ให้ return ค่าผลบวกของเลขทั้งสอง
+      // mul() ให้ return ค่าผลคูณของเลขทั้งสอง
+
+      let calculator = {
+        read: function (x, y) {
+          this.read.a = +x;
+          this.read.b = +y;
+        },
+        sum: function () {
+          return this.read.a + this.read.b;
+        },
+        mul: function () {
+          return this.read.a * this.read.b;
+        },
+      };
+
+      calculator.read();
+      alert(calculator.sum());
+      alert(calculator.mul());
+    </script>
+  </body>
+</html>

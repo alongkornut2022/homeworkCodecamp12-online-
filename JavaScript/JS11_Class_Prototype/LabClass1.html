@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Lab 1
+      // ให้สร้าง Class ชื่อ Calculator มี property และ method ดังนี้
+      // value คือค่าตัวเลขปัจจุบัน (เริ่มต้นเป็น 0 หรือตามที่กำหนด) เช่น new Calculator(10) ให้ value มีค่าเท่ากับ 10
+      // sum() ให้รับค่าตัวเลขและรวมผลรวมเข้าใน value
+      // subtract() ให้รับค่าตัวเลขและหักออกจาก value
+      // multiply() ให้รับค่าตัวเลขและคูณตัวเลขกับ value
+      // divide() ให้รับค่าตัวเลขและนำไปหาร value
+      // show() ให้ alert ค่า value
+
+      class Calculator {
+        constructor(values, ...args) {
+          this.values = values;
+          this.num = args;
+        }
+
+        sum() {
+          return (this.values =
+            this.values + this.num.reduce((acc, item) => (acc += item), 0));
+        }
+
+        subtract() {
+          return (this.values =
+            this.values - this.num.reduce((acc, item) => (acc += item), 0));
+        }
+
+        multiply() {
+          return (this.values =
+            this.values * this.num.reduce((acc, item) => (acc *= item), 1));
+        }
+
+        divide() {
+          return (this.values =
+            this.values / this.num.reduce((acc, item) => (acc /= item), 1));
+        }
+        show() {
+          return alert(this.values);
+        }
+      }
+    </script>
+  </body>
+</html>

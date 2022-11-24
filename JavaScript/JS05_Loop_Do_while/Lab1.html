@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //Lab 1 หน้า 16
+      // ให้เขียนโค้ดเพื่อรับ input มาเป็นตัวเลข โดยให้รับมาเรื่อยๆ จนกว่า ผู้ใช้จะพิมพ์ 0, เลขลบ, String ว่าง, กด cancel หรือ esc จึงหยุดรับตัวเลข
+      // ให้หาผลรวมและค่าเฉลี่ยของเลขที่ผู้ใช้งานกรอกเข้ามา
+
+      let num;
+      let result = 0;
+      do {
+        num = +prompt('Enter Number');
+        result += num;
+        console.log(num);
+      } while (num > 0);
+      console.log(result);
+    </script>
+  </body>
+</html>

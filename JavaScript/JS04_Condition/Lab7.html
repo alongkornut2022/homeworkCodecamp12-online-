@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Lab 7 หน้า 30
+      // จงเขียนโค้ดเพื่อรับ input เข้ามา 2 ค่า คือ username และ password
+      // หาก username หรือ password เป็นค่าว่างให้ โชว์ข้อความ “username is required” หรือ “password is required”
+      // หาก username = “admin” และ password = “1234” หรือ username = “john” และ password = “qwerty” ให้โชว์ข้อความ “Hello” ตามด้วยชื่อ username
+      // หาก username และ password ไม่ตรงตามเงื่อนไขที่กล่าวมาให้ โชว์ข้อความ “invalid username or password”
+
+      let userName = prompt('Enter Username');
+      let passWord = prompt('Enter Password');
+
+      if (userName == '') {
+        alert('username or Password is required');
+      } else if (passWord == '') {
+        alert('username or password is required');
+      } else if (userName == 'admin' && passWord == '1234') {
+        alert('Hello ' + userName);
+      } else if (userName == 'john' && passWord == 'qwerty') {
+        alert('Hello ' + userName);
+      } else {
+        alert('invalid username or password');
+      }
+    </script>
+  </body>
+</html>

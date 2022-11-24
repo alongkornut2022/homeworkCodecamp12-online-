@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Lab 4
+      // จงกระจาย element ที่ซ้อนกันอยู่ภายใน array ให้กระจายออกมาที่ element ชั้นนอกสุด
+      let flattened = [
+        [0, 1],
+        [2, 3],
+        [4, 5],
+      ];
+      // expected result: [0, 1, 2, 3, 4, 5]
+
+      let newFlattened = flattened.reduce((acc, item) => acc.concat(item));
+      console.log(newFlattened);
+    </script>
+  </body>
+</html>

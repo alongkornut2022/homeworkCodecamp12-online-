@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Lab-8
+      // จงหาและนับจำนวนตัวอักษรที่ปรากฏใน str
+      // let str = 'I live in Thailand';
+      // expected result: {i: 4, l: 2, v: 1, e:1, n: 2, t: 1, h:1, a:2, d:1}
+
+      let str = 'I live in Thailand';
+      let newStr = str.split('');
+      let count = newStr.reduce((acc, item) => {
+        let strCount = acc[item.toLowerCase()] ?? 0;
+        return {
+          ...acc,
+          [item.toLowerCase()]: strCount + 1,
+        };
+      }, []);
+    </script>
+  </body>
+</html>

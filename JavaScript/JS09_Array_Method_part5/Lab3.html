@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Lab 3
+      // จงหาคะแนนเฉลี่ยแบบถ่วงน้ำหนัก
+      const scores = [
+        { score: 90, subject: 'HTML', weight: 0.2 },
+        { score: 95, subject: 'CSS', weight: 0.3 },
+        { score: 85, subject: 'JavaScript', weight: 0.5 },
+      ];
+      // expected result: 89
+
+      let getAverageScore = scores.reduce(
+        (acc, item) => acc + (item.score - item.weight),
+        0
+      );
+      console.log(getAverageScore / scores.length);
+    </script>
+  </body>
+</html>

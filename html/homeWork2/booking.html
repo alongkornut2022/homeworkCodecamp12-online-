@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>booking</title>
+    <style>
+      table,
+      th,
+      td {
+        width: 20px;
+        height: 60px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+      td {
+        margin: 20px;
+      }
+      input[type='submit'] {
+        background-color: rgb(243, 128, 75);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 8px 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <table>
+        <tr>
+          <td colspan="2">
+            <label>Flying From</label><br />
+            <select>
+              <option value="Bangkok Thailand">Bangkok Thailand</option>
+              <option value="Udontani Thailand">Udontani Thailand</option>
+              <option value="Udontani Thailand">Chiang Mai Thailand</option>
+              <option value="Udontani Thailand">Krabi Thailand</option>
+            </select>
+          </td>
+          <td colspan="2">
+            <label>To</label><br />
+            <select>
+              <option value="Bangkok Thailand">Bangkok Thailand</option>
+              <option value="Udontani Thailand">Udontani Thailand</option>
+              <option value="Udontani Thailand">Chiang Mai Thailand</option>
+              <option value="Udontani Thailand">Krabi Thailand</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <label for="departing">Departing</label><br />
+            <input type="date" id="departing" name="departing" />
+          </td>
+          <td colspan="2">
+            <label for="returning">Returning</label><br />
+            <input type="date" id="returning" name="returning" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="adult">Adult</label><br />
+            <input type="number" id="adult" name="adult" min="0" max="10" />
+          </td>
+          <td>
+            <label for="child">Child</label><br />
+            <input type="number" id="child" name="child" min="0" max="10" />
+          </td>
+          <td>
+            <label for="infant">Infant</label><br />
+            <input type="number" id="infant" name="infant" min="0" max="10" />
+          </td>
+          <td>
+            <label style="color: orange">Currency</label><br />
+            <select>
+              <option value="USD">USD</option>
+              <option value="EUR">EUR</option>
+              <option value="CHY">CHY</option>
+              <option value="THB">THB</option>
+            </select>
+          </td>
+        </tr>
+      </table>
+      <br />
+      <input type="submit" value="SEARCH" />
+    </form>
+  </body>
+</html>

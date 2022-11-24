@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Lab 1 หน้า ุ69
+      // ให้สร้างฟังก์ชัน checkPermission โดยมีพารามิเตอร์ 3 ตัว
+      //     ตัวแรกเป็น role
+      //     ตัวที่สองเป็นฟังก์ชันและทำงานเมื่อ role  มีค่าเท่ากับ “ADMIN”
+      //     ตัวที่สามเป็นฟังก์ชันและทำงานเมื่อ role  ไม่ใช่  “ADMIN”
+      // ให้ลองเรียกใช้ฟังก์ชันโดย
+      //     ถ้า role เป็น “ADMIN” ให้ alert “ACCESS GRANTED”
+      //     ถ้า role ไม่ใช่ “ADMIN” ให้ alert “ACCESS DENIED”
+
+      function checkPermission(role, yes, no) {
+        if (role == 'ADMIN') a();
+        else b();
+      }
+      function a() {
+        alert('ACCESS GRANTED');
+      }
+      function b() {
+        alert('ACCESS DENIED');
+      }
+      checkPermission('ADMIN', a, b);
+    </script>
+  </body>
+</html>

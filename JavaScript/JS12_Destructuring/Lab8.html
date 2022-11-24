@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Lab 8
+      // จงเขียนฟังก์ชันตรวจสอบอายุ โดยรับข้อมูล user ที่อยู่ใน object ที่มี keys เป็น firstName lastName และ age
+      // โดยถ้า user มีอายุมาก 18 ให้แสดงผลเป็นการทักทายแล้วตามด้วยชื่อ-นามสกุล
+      // ในกรณีที่มีอายุน้อยกว่าหรือเท่ากับ 18 ให้แสดงผลว่า ไม่มีสิทธิ์เข้าใช้งาน (ใช้ destructuring)
+
+      function checkAge({ firstName, lastName, age }) {
+        if (age > 18) {
+          console.log(firstName, lastName);
+        } else {
+          console.log('ไม่มีสิทธิ์เข้าใช้งาน');
+        }
+      }
+
+      let UserA = { firstName: 'a', lastName: 'aaa', age: 19 };
+      let UserB = { firstName: 'b', lastName: 'bbb', age: 18 };
+
+      checkAge(UserA);
+      checkAge(UserB);
+    </script>
+  </body>
+</html>

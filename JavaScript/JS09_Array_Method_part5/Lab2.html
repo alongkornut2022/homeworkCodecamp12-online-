@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Lab 2
+      // จงสร้างฟังก์ชัน getAverageAge(arr) เพื่อหาอายุเฉลี่ยของ array
+      // let john = { name: 'John', age: 27 };
+      // let jo = { name: 'Jo', age: 21 };
+      // let jin = { name: 'Jin', age: 25 };
+
+      // let arr = [john, pete, mary];
+
+      // console.log(getAverageAge(arr)); // (27 + 21 + 25) / 3 = 24.33
+
+      function getAverageAge(arr) {
+        let sum = arr.reduce((acc, item) => acc + item.age, 0);
+        console.log(sum / arr.length);
+      }
+    </script>
+  </body>
+</html>

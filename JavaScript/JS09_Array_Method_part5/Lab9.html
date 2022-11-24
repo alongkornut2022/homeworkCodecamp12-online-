@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Lab-9
+      // จงหา unique array element ของ alphabets
+      let alphabets = [
+        'a',
+        'b',
+        'a',
+        'b',
+        'c',
+        'e',
+        'e',
+        'c',
+        'd',
+        'd',
+        'd',
+        'd',
+      ];
+      // expected result: ['a', 'b', 'c', 'e', 'd']
+      // {a: 2, b: 2, c: 2, e: 2, d: 4}
+
+      let unique = alphabets.reduce((acc, item) => {
+        let uniqueArr = acc[item] ?? 0;
+        console.log(uniqueArr);
+        return { ...acc, item };
+      }, {});
+    </script>
+  </body>
+</html>

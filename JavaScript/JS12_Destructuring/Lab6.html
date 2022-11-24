@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //       Lab 6
+      // ผลลัพธ์ในบรรทัดที่มี \* มีค่าเป็นอะไรและเพราะอะไร
+      function getUserData({ firstName, favoriteColor = 'green' }) {
+        return `Your name is ${firstName} and you like ${favoriteColor}`;
+      }
+      getUserData({ firstName: 'Alejandro', favoriteColor: 'purple' }); // \* Your name is Alejandro and you like purple
+      getUserData({ firstName: 'Melissa' }); // **  Your name is Melissa and you like green
+      getUserData({}); // \***  Your name is undefined and you like green
+    </script>
+  </body>
+</html>

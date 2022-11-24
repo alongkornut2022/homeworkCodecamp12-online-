@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Lab 9 หน้า 32
+      // เขียนโปรแกรมสำหรับรับตัวเลขจากผู้ใช้งาน 3 ตัวเลข
+      // แสดงผลลัพธ์เป็นตัวเลขที่เรียงกันจากมากไปน้อย
+      // เช่นรับค่าเป็น -1 ,4, 0 ให้แสดงผลเป็น 4, 0, -1
+
+      let num_1 = +prompt('Enter Number 1');
+      let num_2 = +prompt('Enter Number 2');
+      let num_3 = +prompt('Enter Number 3');
+
+      if (num_1 > num_2 && num_1 > num_3 && num_2 > num_3) {
+        alert(`${num_1} , ${num_2} , ${num_3}`);
+      } else if (num_1 > num_2 && num_1 > num_3 && num_3 > num_2) {
+        alert(`${num_1} , ${num_3} , ${num_2}`);
+      } else if (num_2 > num_1 && num_2 > num_3 && num_1 > num_3) {
+        alert(`${num_2} , ${num_1} , ${num_3}`);
+      } else if (num_2 > num_1 && num_2 > num_3 && num_3 > num_1) {
+        alert(`${num_2} , ${num_3} , ${num_1}`);
+      } else if (num_3 > num_1 && num_3 > num_2 && num_1 > num_2) {
+        alert(`${num_3} , ${num_1} , ${num_2}`);
+      } else if (num_3 > num_1 && num_3 > num_2 && num_2 > num_1) {
+        alert(`${num_3} , ${num_2} , ${num_1}`);
+      }
+    </script>
+  </body>
+</html>

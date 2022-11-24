@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Lab 6 หน้า 29
+      // จงเขียนโค้ดเพื่อรับ input ที่เป็นตัวเลขเข้ามา 2 ค่า
+      // ให้โชว์ข้อความผลบวกของตัวเลขทั้ง 2
+      // หากมี input อันนึงไม่ใช่ตัวเลข ให้โชว์ข้อความ “Invalid number”
+
+      let input1 = prompt('Enter Number ครั้งที่ 1');
+      let input2 = prompt('Enter Number ครั้งที่ 2');
+
+      if (input1 * 1 == input1 && input2 * 1 == input2) {
+        alert(+input1 + +input2);
+      } else {
+        alert('invalid number');
+      }
+
+      //   *** ติดกด ok หรือ cancel แสดงผลรวมเป็น 0
+    </script>
+  </body>
+</html>

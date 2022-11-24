@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Lab 11 หน้า 34
+      // บรรทัดที่มี *, **, *** และ **** ให้ผลลัพธ์เป็นอะไร เพราะอะไร
+
+      // function sayHi(age) {
+      // if (age < 12) alert('Hi kid');
+      // }
+      // console.log(sayHi); // *
+      // // f {
+      // // if (age < 12) alert('Hi kid');
+      // // }
+      // console.log(sayHi(10)); // ** Hi kid
+
+      function sayHi(name) {
+        if (name) {
+          alert('Hi ' + name);
+          return;
+        } else {
+          return 'Who are you';
+        }
+      }
+      console.log(sayHi('John')); // *** Hi john
+      console.log(sayHi()); // ****  Who are you
+    </script>
+  </body>
+</html>
